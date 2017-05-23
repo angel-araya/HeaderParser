@@ -1,0 +1,25 @@
+{
+  "name": "headerparser",
+  "version": "0.1.0",
+  "description": "A microservice that tells your IP address, language and browser OS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "7.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelaraya/HeaderParser.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelaraya/HeaderParser/issues"
+  },
+  "homepage": "https://github.com/angelaraya/HeaderParser#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
