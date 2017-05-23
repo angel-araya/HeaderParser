@@ -5,7 +5,9 @@ const app = express()
 app.set('port', process.env.PORT || 8080)
 
 app.get('/', (req, res) => {
-  res.json({"ip": req.headers['x-forwarded-for'] || req.connection.remoteAddress })
+  res.json({"ipaddress": req.headers['x-forwarded-for'] || req.connection.remoteAddress,
+            "language": req.headers['accept-language'],
+            "software": req.headers['user-agent']})
 })
 
 app.listen(app.get('port'), () => {
